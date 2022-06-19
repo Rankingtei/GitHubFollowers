@@ -26,6 +26,7 @@
 		B35F781F285B7A7400034EFA /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F781E285B7A7400034EFA /* ErrorMessage.swift */; };
 		B35F7822285CE28600034EFA /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F7821285CE28600034EFA /* FollowerCell.swift */; };
 		B35F7824285CE33500034EFA /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F7823285CE33500034EFA /* GFAvatarImageView.swift */; };
+		B3CA81B4285F30B600467AEF /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA81B3285F30B600467AEF /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		B35F781E285B7A7400034EFA /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		B35F7821285CE28600034EFA /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		B35F7823285CE33500034EFA /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		B3CA81B3285F30B600467AEF /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				B35F781E285B7A7400034EFA /* ErrorMessage.swift */,
+				B3CA81B3285F30B600467AEF /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				B35F78002859FEA500034EFA /* SearchVC.swift in Sources */,
 				B35F7804285A0B0B00034EFA /* GFButton.swift in Sources */,
 				B35F7810285B42D100034EFA /* UIViewController+Ext.swift in Sources */,
+				B3CA81B4285F30B600467AEF /* UIHelper.swift in Sources */,
 				B35F7824285CE33500034EFA /* GFAvatarImageView.swift in Sources */,
 				B35F77EC2859F9C600034EFA /* AppDelegate.swift in Sources */,
 				B35F780E285B383700034EFA /* GFAlertVC.swift in Sources */,
