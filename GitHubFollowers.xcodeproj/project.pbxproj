@@ -27,6 +27,7 @@
 		B35F7822285CE28600034EFA /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F7821285CE28600034EFA /* FollowerCell.swift */; };
 		B35F7824285CE33500034EFA /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F7823285CE33500034EFA /* GFAvatarImageView.swift */; };
 		B3CA81B4285F30B600467AEF /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA81B3285F30B600467AEF /* UIHelper.swift */; };
+		B3CA81B62860C19900467AEF /* GFEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA81B52860C19900467AEF /* GFEmptyState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		B35F7821285CE28600034EFA /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		B35F7823285CE33500034EFA /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		B3CA81B3285F30B600467AEF /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		B3CA81B52860C19900467AEF /* GFEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				B35F780D285B383700034EFA /* GFAlertVC.swift */,
 				B35F780B285B375700034EFA /* GFBodyLabel.swift */,
 				B35F7823285CE33500034EFA /* GFAvatarImageView.swift */,
+				B3CA81B52860C19900467AEF /* GFEmptyState.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CA81B62860C19900467AEF /* GFEmptyState.swift in Sources */,
 				B35F7819285B560800034EFA /* User.swift in Sources */,
 				B35F7806285A0F7500034EFA /* GFTextField.swift in Sources */,
 				B35F78002859FEA500034EFA /* SearchVC.swift in Sources */,
