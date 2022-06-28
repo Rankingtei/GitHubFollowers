@@ -22,6 +22,9 @@ class GFRepoItemVC: GFItemInfoVC {
         
         
     }
+    override func actionButtonTapped() {
+        delegate.didTapGitHubProfile(for: user)
+    }
     
 }
 
