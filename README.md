@@ -7,4 +7,5 @@ Install Xcode on MacOS
 
 # Visuals
 
-![Untitled design (2)](https://user-images.githubusercontent.com/18536619/180720648-bfa23a85-64a0-4c87-93fe-2852f54d4593.png)
+
+![Screen Shot 2022-07-25 at 07 26 18](https://user-images.githubusercontent.com/18536619/180721454-04f3a3a7-079b-48da-bff0-29fd56672d83.jpg)
