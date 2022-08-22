@@ -22,6 +22,7 @@ class UserInfoVC: UIViewController {
     let itemViewTwo = UIView()
     let dateLabel = GFBodyLabel(textAlignment: .center)
     
+    
     weak var delegate:FollowerListVCDelegate!
     
     
@@ -39,10 +40,8 @@ class UserInfoVC: UIViewController {
             
             switch result {
             case .success(let user):
-                DispatchQueue.main.async {
-                    self.configureUIElements(with: user)
-                }
-
+                DispatchQueue.main.async { self.configureUIElements(with: user) }
+                
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
             }
@@ -54,13 +53,16 @@ class UserInfoVC: UIViewController {
         let repoItemVC = GFRepoItemVC(user: user)
         repoItemVC.delegate = self
         
+        
+        
         let followerItemVC = GFFollowersItemVC(user: user)
         followerItemVC.delegate = self
         
+        self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
         self.add(childVC: repoItemVC, to: self.itemViewOne)
         self.add(childVC: followerItemVC, to: self.itemViewTwo)
-        self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
-        self.dateLabel.text = "On Github since \(user.createdAt.convertToDisplayFormat())"
+       
+        self.dateLabel.text = "On Github since \(user.createdAt.convertToMonthYearFormat())"
     }
    
     

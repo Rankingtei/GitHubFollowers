@@ -14,7 +14,6 @@ class GFItemInfoVC: UIViewController {
     let itemInfoViewTwo = GFItemInfoView()
     let actionButton = GFButton()
     
-    
     var user: User!
     weak var delegate: userInfoVCDelegate!
     
@@ -22,7 +21,6 @@ class GFItemInfoVC: UIViewController {
     init(user: User){
         super.init(nibName: nil, bundle: nil)
         self.user = user
-        
     }
     
     required init?(coder: NSCoder) {
@@ -63,15 +61,15 @@ class GFItemInfoVC: UIViewController {
        
         
         stackVIew.translatesAutoresizingMaskIntoConstraints = false
-        let padding: CGFloat = 20
+        let padding: CGFloat = 30
         
         NSLayoutConstraint.activate([
-            stackVIew.topAnchor.constraint(equalTo: view.topAnchor, constant: padding),
+            stackVIew.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
             stackVIew.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             stackVIew.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
             stackVIew.heightAnchor.constraint(equalToConstant: 50),
             
-            actionButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -padding),
+            actionButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
             actionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             actionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
             actionButton.heightAnchor.constraint(equalToConstant: 44)

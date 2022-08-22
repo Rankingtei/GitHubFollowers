@@ -8,7 +8,6 @@
 import UIKit
 import SafariServices
 
-
 fileprivate var containerView: UIView!
 
 extension UIViewController{

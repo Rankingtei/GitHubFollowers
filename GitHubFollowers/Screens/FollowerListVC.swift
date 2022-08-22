@@ -32,6 +32,16 @@ class FollowerListVC: UIViewController {
         configureDatasSource()
 }
     
+    init(username: String){
+        super.init(nibName: nil, bundle: nil)
+        self.username = username
+        title = username
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -123,14 +133,14 @@ class FollowerListVC: UIViewController {
                     guard let self = self else { return }
                     
                     guard let error = error else {
-                        self.presentGFAlertOnMainThread(title: "Success", message: "User added to favorites", buttonTitle: "OK")
+                        self.presentGFAlertOnMainThread(title: "Success", message: "\(user.login) added to favorites", buttonTitle: "OK")
                         return
                 }
                     self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
                 }
                 
                 
-            case .failure(let error):
+            case .failure(_):
                 self.presentGFAlertOnMainThread(title: "Something went wrong", message: "There was an error", buttonTitle: "ok")
             }
         }
@@ -142,7 +152,7 @@ extension FollowerListVC: UICollectionViewDelegate {
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
-        let height = scrollView.frame.size.height
+        let height = scrollView.frame.size.height 
         
         if offsetY > contentHeight - height {
             guard HasMoreFollowers else { return }
